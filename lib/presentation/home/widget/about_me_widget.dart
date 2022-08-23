@@ -11,7 +11,7 @@ class AboutMeWidget extends StatelessWidget {
           'Alejandro Campos',
           style: TextStyle(
             fontFamily: 'NotoSerif',
-            fontSize: 22,
+            fontSize: 16,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -19,7 +19,7 @@ class AboutMeWidget extends StatelessWidget {
           'Software Engineer, Flutter developer',
           style: TextStyle(
             fontFamily: 'NotoSerif',
-            fontSize: 24,
+            fontSize: 18,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -27,7 +27,7 @@ class AboutMeWidget extends StatelessWidget {
           'Based on Cuba',
           style: TextStyle(
             fontFamily: 'NotoSerif',
-            fontSize: 22,
+            fontSize: 16,
             fontWeight: FontWeight.w500,
           ),
         ),

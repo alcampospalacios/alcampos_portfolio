@@ -1,4 +1,6 @@
 import 'package:alcampos_portfolio/presentation/home/widget/about_me_widget.dart';
+import 'package:alcampos_portfolio/presentation/home/widget/personal_summary_widget.dart';
+import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -61,13 +63,22 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 18.0),
-        child: Column(
+        padding: EdgeInsets.only(
+          top: 18.0,
+          left: MediaQuery.of(context).size.width * 0.08,
+          right: MediaQuery.of(context).size.width * 0.08,
+        ),
+        child: ListView(
           children: const [
             Align(
               alignment: Alignment.center,
               child: AboutMeWidget(),
             ),
+            PersonalSummaryWidget(),
+            Padding(
+              padding: EdgeInsets.only(top: 50.0),
+              child: ToolSWidget(),
+            )
           ],
         ),
       ),
