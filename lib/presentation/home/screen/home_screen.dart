@@ -4,6 +4,8 @@ import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../widget/skills_widget.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -33,20 +35,10 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        title: Column(
-          children: const [
-            Icon(Icons.abc, color: Colors.black87),
-            FittedBox(
-              fit: BoxFit.cover,
-              child: Text('ALEJANDRO \n CAMPOS',
-                  style: TextStyle(
-                    fontFamily: 'NotoSerif',
-                    color: Colors.black87,
-                    fontSize: 8,
-                    fontWeight: FontWeight.bold,
-                  )),
-            ),
-          ],
+        title: Image.asset(
+          'assets/logos/alcampos.png',
+          width: MediaQuery.of(context).size.width * 0.3,
+          height: MediaQuery.of(context).size.height * 0.27,
         ),
         centerTitle: true,
         actions: [
@@ -78,7 +70,20 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(top: 50.0),
               child: ToolSWidget(),
-            )
+            ),
+            SizedBox(height: 45),
+            Divider(
+              color: Colors.black38,
+              thickness: 0.5,
+            ),
+            SizedBox(height: 45),
+            SkillsWidget(),
+            SizedBox(height: 45),
+            Divider(
+              color: Colors.black38,
+              thickness: 0.5,
+            ),
+            SizedBox(height: 25),
           ],
         ),
       ),
