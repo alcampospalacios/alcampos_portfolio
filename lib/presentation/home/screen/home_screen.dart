@@ -1,4 +1,5 @@
 import 'package:alcampos_portfolio/presentation/home/widget/about_me_widget.dart';
+import 'package:alcampos_portfolio/presentation/home/widget/education_and_experience_widget.dart';
 import 'package:alcampos_portfolio/presentation/home/widget/personal_summary_widget.dart';
 import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
 import 'package:flutter/material.dart';
@@ -78,6 +79,12 @@ class HomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 45),
             SkillsWidget(),
+            SizedBox(height: 45),
+            Divider(
+              color: Colors.black38,
+              thickness: 0.5,
+            ),
+            EducationAndExperience(),
             SizedBox(height: 45),
             Divider(
               color: Colors.black38,
