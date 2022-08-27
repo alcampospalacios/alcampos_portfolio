@@ -8,14 +8,6 @@ class AboutMeWidget extends StatelessWidget {
     return Column(
       children: const [
         Text(
-          'Alejandro Campos',
-          style: TextStyle(
-            fontFamily: 'NotoSerif',
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        Text(
           'Software Engineer, Flutter developer',
           style: TextStyle(
             fontFamily: 'NotoSerif',
