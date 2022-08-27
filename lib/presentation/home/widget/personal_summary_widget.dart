@@ -49,13 +49,6 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'www.linkedin.com/in/alcampospalacios',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Text(
                   '+5352054104',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
                 ),
@@ -77,7 +70,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'Mobile Application developer',
+                  'Mobile Application Developer',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
                 ),
                 SizedBox(

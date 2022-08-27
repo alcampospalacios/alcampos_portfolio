@@ -1,8 +1,11 @@
 import 'package:alcampos_portfolio/presentation/home/widget/about_me_widget.dart';
+import 'package:alcampos_portfolio/presentation/home/widget/education_and_experience_widget.dart';
+import 'package:alcampos_portfolio/presentation/home/widget/latest_projects_widget.dart';
 import 'package:alcampos_portfolio/presentation/home/widget/personal_summary_widget.dart';
 import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'dart:html' as html;
 
 import '../widget/skills_widget.dart';
 
@@ -42,15 +45,40 @@ class HomeScreen extends StatelessWidget {
         ),
         centerTitle: true,
         actions: [
-          const Center(child: FaIcon(FontAwesomeIcons.github, size: 16, color: Colors.black)),
-          const SizedBox(width: 15),
-          const Center(child: FaIcon(FontAwesomeIcons.twitter, size: 16, color: Colors.black)),
-          const SizedBox(width: 15),
-          const Center(child: FaIcon(FontAwesomeIcons.facebookF, size: 16, color: Colors.black)),
-          const SizedBox(width: 15),
+          Center(
+              child: IconButton(
+                  onPressed: () => html.window.open('https://github.com/alcampospalacios', "_blank"),
+                  icon: const FaIcon(
+                    FontAwesomeIcons.github,
+                    size: 16,
+                    color: Colors.black,
+                  ))),
+          Center(
+              child: IconButton(
+                  onPressed: () => html.window.open('https://twitter.com/4l3j4ndr09212', "_blank"),
+                  icon: const FaIcon(
+                    FontAwesomeIcons.twitter,
+                    size: 16,
+                    color: Colors.black,
+                  ))),
+          Center(
+              child: IconButton(
+                  onPressed: () => html.window.open('https://www.linkedin.com/in/alcampospalacios', "_blank"),
+                  icon: const FaIcon(
+                    FontAwesomeIcons.linkedinIn,
+                    size: 16,
+                    color: Colors.black,
+                  ))),
           Padding(
             padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.08),
-            child: const Center(child: FaIcon(FontAwesomeIcons.instagram, size: 16, color: Colors.black)),
+            child: Center(
+                child: IconButton(
+                    onPressed: () => html.window.open('https://www.instagram.com/alejandrocampospalacios', "_blank"),
+                    icon: const FaIcon(
+                      FontAwesomeIcons.instagram,
+                      size: 16,
+                      color: Colors.black,
+                    ))),
           ),
         ],
       ),
@@ -83,6 +111,23 @@ class HomeScreen extends StatelessWidget {
               color: Colors.black38,
               thickness: 0.5,
             ),
+            EducationAndExperience(),
+            SizedBox(height: 45),
+            Divider(
+              color: Colors.black38,
+              thickness: 0.5,
+            ),
+            SizedBox(height: 45),
+            LatestProjectWidget(),
+            SizedBox(height: 45),
+            SizedBox(height: 45),
+            Divider(
+              color: Colors.black38,
+              thickness: 0.5,
+            ),
+            SizedBox(height: 45),
+            Text('Made with flutter by @alcampospalacios, design by Logan Cee',
+                style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45)),
             SizedBox(height: 25),
           ],
         ),
