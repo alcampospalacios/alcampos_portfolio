@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
-class CardProjectWidget extends StatelessWidget {
+import 'package:flutter/material.dart';
+
+class CardProjectWidgetMobile extends StatelessWidget {
   final String imageUrl;
   final String title;
   final String url;
-  const CardProjectWidget({Key? key, required this.imageUrl, required this.title, required this.url}) : super(key: key);
+  const CardProjectWidgetMobile({Key? key, required this.imageUrl, required this.title, required this.url}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +15,8 @@ class CardProjectWidget extends StatelessWidget {
         InkWell(
           onTap: () => html.window.open(url, "_blank"),
           child: Container(
-            width: MediaQuery.of(context).size.width * 0.2,
-            height: MediaQuery.of(context).size.height * 0.5,
+            width: MediaQuery.of(context).size.width * 0.4,
+            height: MediaQuery.of(context).size.height * 0.25,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
@@ -45,7 +46,6 @@ class CardProjectWidget extends StatelessWidget {
           style: const TextStyle(
             fontFamily: 'NotoSerif',
             color: Colors.black45,
-            fontSize: 16,
           ),
         ),
       ],

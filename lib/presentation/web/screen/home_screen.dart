@@ -1,13 +1,14 @@
-import 'package:alcampos_portfolio/presentation/home/widget/about_me_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/education_and_experience_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/latest_projects_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/personal_summary_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:html' as html;
 
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../widget/about_me_widget.dart';
+import '../widget/education_and_experience_widget.dart';
+import '../widget/latest_projects_widget.dart';
+import '../widget/personal_summary_widget.dart';
 import '../widget/skills_widget.dart';
+import '../widget/tools_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -95,36 +96,21 @@ class HomeScreen extends StatelessWidget {
               child: AboutMeWidget(),
             ),
             PersonalSummaryWidget(),
-            Padding(
-              padding: EdgeInsets.only(top: 50.0),
-              child: ToolSWidget(),
-            ),
+            ToolSWidget(),
             SizedBox(height: 45),
-            Divider(
-              color: Colors.black38,
-              thickness: 0.5,
-            ),
+            Divider(color: Colors.black26, thickness: 0.5),
             SizedBox(height: 45),
             SkillsWidget(),
             SizedBox(height: 45),
-            Divider(
-              color: Colors.black38,
-              thickness: 0.5,
-            ),
+            Divider(color: Colors.black26, thickness: 0.5),
             EducationAndExperience(),
             SizedBox(height: 45),
-            Divider(
-              color: Colors.black38,
-              thickness: 0.5,
-            ),
+            Divider(color: Colors.black26, thickness: 0.5),
             SizedBox(height: 45),
             LatestProjectWidget(),
             SizedBox(height: 45),
             SizedBox(height: 45),
-            Divider(
-              color: Colors.black38,
-              thickness: 0.5,
-            ),
+            Divider(color: Colors.black26, thickness: 0.5),
             SizedBox(height: 45),
             Text('Made with flutter by @alcampospalacios, design by Logan Cee',
                 style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45)),

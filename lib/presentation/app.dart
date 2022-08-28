@@ -1,4 +1,5 @@
-import 'package:alcampos_portfolio/presentation/home/screen/home_screen.dart';
+import 'package:alcampos_portfolio/presentation/mobile/screen/home_screen_mobile.dart';
+
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -6,8 +7,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = ThemeData();
-
     return MaterialApp(
         title: 'alcamposportfolio',
         /*   home: const SignInPage(), */
@@ -15,7 +14,7 @@ class App extends StatelessWidget {
         showPerformanceOverlay: false,
         initialRoute: '/home',
         routes: {
-          '/home': (context) => const HomeScreen(),
+          '/home': (context) => const HomeScreenMobile(),
         });
   }
 }

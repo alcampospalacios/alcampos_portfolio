@@ -1,4 +1,4 @@
-import 'package:alcampos_portfolio/presentation/home/widget/time_lines_widgets.dart';
+import '../../core/widgets/time_lines_widgets.dart';
 import 'package:flutter/material.dart';
 
 class PersonalSummaryWidget extends StatelessWidget {
