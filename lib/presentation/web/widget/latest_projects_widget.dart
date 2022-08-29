@@ -1,6 +1,7 @@
-import 'card_project_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import 'card_project_widget.dart';
 
 class LatestProjectWidget extends StatefulWidget {
   const LatestProjectWidget({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
-import 'package:alcampos_portfolio/presentation/mobile/screen/home_screen_mobile.dart';
-import 'package:alcampos_portfolio/presentation/web/screen/home_screen.dart';
+import 'mobile/screen/home_screen_mobile.dart';
+import 'web/screen/home_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
