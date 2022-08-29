@@ -23,6 +23,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         extendBodyBehindAppBar: false,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -41,6 +42,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               child: Center(
                 child: CircleAvatar(
                   radius: 20,
+                  backgroundColor: Colors.transparent,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(25),
                     child: Image.asset(
