@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widgets/about_me_widget_mobile.dart';
+import '../widgets/education_and_experience_widget_mobile.dart';
+import '../widgets/latest_projects_widget_mobile.dart';
 import '../widgets/personal_summary_widget_mobile.dart';
+import '../widgets/skills_widget_mobile.dart';
 import '../widgets/tools_widget_mobile.dart';
 
 class HomeScreenMobile extends StatelessWidget {
@@ -60,6 +63,23 @@ class HomeScreenMobile extends StatelessWidget {
               ),
               PersonalSummaryWidgetMobile(),
               ToolSWidgetMobile(),
+              SizedBox(height: 45),
+              Divider(color: Colors.black26, thickness: 0.5),
+              SizedBox(height: 25),
+              SkillsWidgetMobile(),
+              Divider(color: Colors.black26, thickness: 0.5),
+              SizedBox(height: 25),
+              EducationAndExperienceWidgetMobile(),
+              SizedBox(height: 25),
+              Divider(color: Colors.black26, thickness: 0.5),
+              SizedBox(height: 25),
+              LatestProjectWidgetMobile(),
+              SizedBox(height: 45),
+              Divider(color: Colors.black26, thickness: 0.5),
+              SizedBox(height: 45),
+              Text('Made with flutter by @alcampospalacios, design by Alejandro Campos',
+                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45)),
+              SizedBox(height: 25),
             ],
           ),
         ));

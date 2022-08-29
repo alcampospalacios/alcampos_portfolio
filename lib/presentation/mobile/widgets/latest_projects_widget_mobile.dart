@@ -1,34 +1,35 @@
-import 'card_project_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class LatestProjectWidget extends StatefulWidget {
-  const LatestProjectWidget({Key? key}) : super(key: key);
+import 'card_project_widget_mobile.dart';
+
+class LatestProjectWidgetMobile extends StatefulWidget {
+  const LatestProjectWidgetMobile({Key? key}) : super(key: key);
 
   @override
-  State<LatestProjectWidget> createState() => _LatestProjectWidgetState();
+  State<LatestProjectWidgetMobile> createState() => _LatestProjectWidgetMobileState();
 }
 
-class _LatestProjectWidgetState extends State<LatestProjectWidget> {
-  final controller = PageController(viewportFraction: 0.3, keepPage: true, initialPage: 1);
+class _LatestProjectWidgetMobileState extends State<LatestProjectWidgetMobile> {
+  final controller = PageController(viewportFraction: 0.5, keepPage: true, initialPage: 1);
 
   final pages = [
-    const CardProjectWidget(
+    const CardProjectWidgetMobile(
       imageUrl: 'assets/images/pp2.jpeg',
       title: 'Picker&PackerTwo',
       url: 'Developing',
     ),
-    const CardProjectWidget(
+    const CardProjectWidgetMobile(
       imageUrl: 'assets/images/get_image_cache_network.gif',
       title: 'GetImageCacheNetwork',
       url: 'https://pub.dev/packages/get_image_cache_network',
     ),
-    const CardProjectWidget(
+    const CardProjectWidgetMobile(
       imageUrl: 'assets/images/tkc.jpeg',
       title: 'TKC App',
       url: 'https://play.google.com/store/apps/details?id=com.tkc.app.pro',
     ),
-    const CardProjectWidget(
+    const CardProjectWidgetMobile(
       imageUrl: 'assets/images/pp1.jpeg',
       title: 'Picker&Packer',
       url: 'https://play.google.com/store/apps/details?id=com.pickpack.app.pro',
@@ -44,12 +45,12 @@ class _LatestProjectWidgetState extends State<LatestProjectWidget> {
             style: TextStyle(
               fontFamily: 'NotoSerif',
               color: Colors.black87,
-              fontSize: 24,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
             )),
         const SizedBox(height: 20),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.6,
+          height: MediaQuery.of(context).size.height * 0.3,
           child: PageView.builder(
             controller: controller,
             itemCount: pages.length,
