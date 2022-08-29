@@ -1,4 +1,4 @@
-import 'package:alcampos_portfolio/presentation/home/widget/card_project_widget.dart';
+import 'card_project_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

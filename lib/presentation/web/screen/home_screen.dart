@@ -1,13 +1,14 @@
-import 'package:alcampos_portfolio/presentation/home/widget/about_me_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/education_and_experience_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/latest_projects_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/personal_summary_widget.dart';
-import 'package:alcampos_portfolio/presentation/home/widget/tools_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:html' as html;
 
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../widget/about_me_widget.dart';
+import '../widget/education_and_experience_widget.dart';
+import '../widget/latest_projects_widget.dart';
+import '../widget/personal_summary_widget.dart';
 import '../widget/skills_widget.dart';
+import '../widget/tools_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
