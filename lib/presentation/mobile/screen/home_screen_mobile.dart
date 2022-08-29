@@ -2,7 +2,6 @@ import 'dart:html' as html;
 
 import 'package:alcampos_portfolio/presentation/core/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widgets/about_me_widget_mobile.dart';
 import '../widgets/education_and_experience_widget_mobile.dart';
@@ -11,8 +10,15 @@ import '../widgets/personal_summary_widget_mobile.dart';
 import '../widgets/skills_widget_mobile.dart';
 import '../widgets/tools_widget_mobile.dart';
 
-class HomeScreenMobile extends StatelessWidget {
+class HomeScreenMobile extends StatefulWidget {
   const HomeScreenMobile({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreenMobile> createState() => _HomeScreenMobileState();
+}
+
+class _HomeScreenMobileState extends State<HomeScreenMobile> {
+  final _scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +53,9 @@ class HomeScreenMobile extends StatelessWidget {
             ),
           ],
         ),
-        drawer: const MenuWidgetMobile(),
+        drawer: MenuWidgetMobile(
+          scrollController: _scrollController,
+        ),
         body: Padding(
           padding: EdgeInsets.only(
             top: 18.0,
@@ -55,6 +63,7 @@ class HomeScreenMobile extends StatelessWidget {
             right: MediaQuery.of(context).size.width * 0.08,
           ),
           child: ListView(
+            controller: _scrollController,
             children: const [
               Align(
                 alignment: Alignment.center,
