@@ -1,5 +1,6 @@
 import 'dart:html' as html;
 
+import 'package:alcampos_portfolio/presentation/core/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -19,12 +20,9 @@ class HomeScreenMobile extends StatelessWidget {
         extendBodyBehindAppBar: false,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          iconTheme: const IconThemeData(color: Colors.black),
           elevation: 0,
           leadingWidth: MediaQuery.of(context).size.width * 0.4,
-          leading: const Icon(
-            Icons.menu,
-            color: Colors.black,
-          ),
           title: Image.asset(
             'assets/logos/alcampos.png',
             width: MediaQuery.of(context).size.width * 0.3,
@@ -49,6 +47,7 @@ class HomeScreenMobile extends StatelessWidget {
             ),
           ],
         ),
+        drawer: const MenuWidgetMobile(),
         body: Padding(
           padding: EdgeInsets.only(
             top: 18.0,
