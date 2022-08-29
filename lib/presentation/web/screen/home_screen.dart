@@ -10,12 +10,27 @@ import '../widget/personal_summary_widget.dart';
 import '../widget/skills_widget.dart';
 import '../widget/tools_widget.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final _scrollController = ScrollController();
+
+  // Define the function that scroll to an item
+  void _scrollToIndex(String workOrContact) {
+    workOrContact == 'contact'
+        ? _scrollController.animateTo(200, duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
+        : _scrollController.animateTo(1400, duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       extendBodyBehindAppBar: false,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -25,17 +40,31 @@ class HomeScreen extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.08),
-              child: const Text(
-                'Works',
-                style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+              child: TextButton(
+                onPressed: () {
+                  setState(() {
+                    _scrollToIndex('work');
+                  });
+                },
+                child: const Text(
+                  'Works',
+                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+                ),
               ),
             ),
             const SizedBox(
               width: 50,
             ),
-            const Text(
-              'Contact',
-              style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  _scrollToIndex('contact');
+                });
+              },
+              child: const Text(
+                'Contact',
+                style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+              ),
             ),
           ],
         ),
@@ -90,6 +119,7 @@ class HomeScreen extends StatelessWidget {
           right: MediaQuery.of(context).size.width * 0.08,
         ),
         child: ListView(
+          controller: _scrollController,
           children: const [
             Align(
               alignment: Alignment.center,

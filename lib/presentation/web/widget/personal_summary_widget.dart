@@ -16,7 +16,7 @@ class PersonalSummaryWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.2,
             child: ListView(
               shrinkWrap: true,
-              scrollDirection: Axis.vertical,
+              physics: const NeverScrollableScrollPhysics(),
               children: const [
                 Text(
                   'BIOGRAPHY',
@@ -104,7 +104,7 @@ class PersonalSummaryWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.2,
             child: ListView(
               shrinkWrap: true,
-              scrollDirection: Axis.vertical,
+              physics: const NeverScrollableScrollPhysics(),
               children: const [
                 Text(
                   'YEARS OF\n EXPERIENCE',
