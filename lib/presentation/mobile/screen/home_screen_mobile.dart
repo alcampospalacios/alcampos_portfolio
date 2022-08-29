@@ -1,6 +1,6 @@
 import 'dart:html' as html;
 
-import 'package:alcampos_portfolio/presentation/core/widgets/menu_widget.dart';
+import '../../core/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/about_me_widget_mobile.dart';
