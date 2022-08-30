@@ -2,7 +2,8 @@ import 'mobile/screen/home_screen_mobile.dart';
 import 'web/screen/home_screen.dart';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
+
+import 'core/extensions.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -16,10 +17,7 @@ class App extends StatelessWidget {
         showPerformanceOverlay: false,
         initialRoute: '/home',
         routes: {
-          '/home': (context) => ScreenTypeLayout(
-                mobile: const HomeScreenMobile(),
-                desktop: const HomeScreen(),
-              )
+          '/home': (context) => context.isTablet ? const HomeScreenMobile() : const HomeScreen(),
         });
   }
 }
