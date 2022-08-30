@@ -113,7 +113,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -155,7 +155,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -197,7 +197,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -239,7 +239,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -281,7 +281,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -321,7 +321,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -363,7 +363,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
@@ -405,7 +405,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
                     height: MediaQuery.of(context).size.height * 0.1,
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
                       border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
