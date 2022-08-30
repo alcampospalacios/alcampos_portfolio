@@ -17,7 +17,7 @@ class App extends StatelessWidget {
         showPerformanceOverlay: false,
         initialRoute: '/home',
         routes: {
-          '/home': (context) => context.isTablet ? const HomeScreenMobile() : const HomeScreen(),
+          '/home': (context) => context.isMobile ? const HomeScreenMobile() : const HomeScreen(),
         });
   }
 }
