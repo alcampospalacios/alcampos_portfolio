@@ -58,7 +58,7 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   size: 14,
                 ),
                 label: const Text(
-                  'Follow me on Github',
+                  'Follow me Github',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 16),
                 )),
           ),
@@ -73,7 +73,7 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   size: 14,
                 ),
                 label: const Text(
-                  'Follow me on Twitter',
+                  'Follow me Twitter',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 16),
                 )),
           ),
@@ -88,7 +88,7 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   size: 14,
                 ),
                 label: const Text(
-                  'Follow me on Linkedin',
+                  'Follow me Linkedin',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 16),
                 )),
           ),
@@ -96,14 +96,14 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window.open('https://www.instagram.com/alejandrocampospalacios', "_blank"),
+                onPressed: () => html.window.open('https://stackoverflow.com/users/12355947/alejandro-campos-palacios', "_blank"),
                 icon: const FaIcon(
-                  FontAwesomeIcons.instagram,
+                  FontAwesomeIcons.stackOverflow,
                   color: Colors.black45,
                   size: 14,
                 ),
                 label: const Text(
-                  'Follow me on Instagram',
+                  'Follow me Stackoverflow',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 16),
                 )),
           ),

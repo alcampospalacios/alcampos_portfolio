@@ -42,7 +42,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  'alcampos@gmail.com',
+                  'alcampospalacios@gmail.com',
                   style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
                 ),
                 SizedBox(

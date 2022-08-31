@@ -103,9 +103,10 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.08),
             child: Center(
                 child: IconButton(
-                    onPressed: () => html.window.open('https://www.instagram.com/alejandrocampospalacios', "_blank"),
+                    onPressed: () =>
+                        html.window.open('https://stackoverflow.com/users/12355947/alejandro-campos-palacios', "_blank"),
                     icon: const FaIcon(
-                      FontAwesomeIcons.instagram,
+                      FontAwesomeIcons.stackOverflow,
                       size: 16,
                       color: Colors.black,
                     ))),
@@ -120,31 +121,47 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         child: ListView(
           controller: _scrollController,
-          children: const [
-            Align(
+          children: [
+            const Align(
               alignment: Alignment.center,
               child: AboutMeWidget(),
             ),
-            PersonalSummaryWidget(),
-            ToolSWidget(),
-            SizedBox(height: 45),
-            Divider(color: Colors.black26, thickness: 0.5),
-            SizedBox(height: 45),
-            SkillsWidget(),
-            SizedBox(height: 45),
-            Divider(color: Colors.black26, thickness: 0.5),
-            EducationAndExperience(),
-            SizedBox(height: 45),
-            Divider(color: Colors.black26, thickness: 0.5),
-            SizedBox(height: 45),
-            LatestProjectWidget(),
-            SizedBox(height: 45),
-            SizedBox(height: 45),
-            Divider(color: Colors.black26, thickness: 0.5),
-            SizedBox(height: 45),
-            Text('Made with flutter by @alcampospalacios, design by Logan Cee',
-                style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45)),
-            SizedBox(height: 25),
+            const PersonalSummaryWidget(),
+            const ToolSWidget(),
+            const SizedBox(height: 45),
+            const Divider(color: Colors.black26, thickness: 0.5),
+            const SizedBox(height: 45),
+            const SkillsWidget(),
+            const SizedBox(height: 45),
+            const Divider(color: Colors.black26, thickness: 0.5),
+            const EducationAndExperience(),
+            const SizedBox(height: 45),
+            const Divider(color: Colors.black26, thickness: 0.5),
+            const SizedBox(height: 45),
+            const LatestProjectWidget(),
+            const SizedBox(height: 45),
+            const SizedBox(height: 45),
+            const Divider(color: Colors.black26, thickness: 0.5),
+            const SizedBox(height: 45),
+            Row(
+              children: [
+                const Text('Made with flutter by @alcampospalacios, design by',
+                    style: TextStyle(
+                      fontFamily: 'NotoSerif',
+                      color: Colors.black45,
+                    )),
+                TextButton(
+                  onPressed: () =>
+                      html.window.open('https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison', "_blank"),
+                  child: Text('Logan Cee',
+                      style: TextStyle(
+                        fontFamily: 'NotoSerif',
+                        color: Colors.red[300],
+                      )),
+                )
+              ],
+            ),
+            const SizedBox(height: 25),
           ],
         ),
       ),
