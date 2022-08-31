@@ -44,8 +44,7 @@ Now you need to add this setting to your project on github:
 
 ## Fixing performance problem on load initial
 
-Now we need to add some script ![Uploading WhatsApp Image 2022-08-31 at 12.27.25 AM.jpeg…]()
-to get a better performance on load
+Now we need to add some script to get a better performance on load
 
 - [This code was writed by Ditman in this discuss issue, here](https://github.com/flutter/flutter/issues/76009)
 
