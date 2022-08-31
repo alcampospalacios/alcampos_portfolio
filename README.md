@@ -39,10 +39,13 @@ webRender: Is to build your app using canvaskit or html, by default is canvaskit
 baseHref: This is the name of your repo and will be part of the url.
 
 Now you need to add this setting to your project on github:
+![settings](https://user-images.githubusercontent.com/54634181/187593456-ed30429a-2430-4438-b996-87bab15cbeb6.jpeg)
+
 
 ## Fixing performance problem on load initial
 
-Now we need to add some script to get a better performance on load
+Now we need to add some script ![Uploading WhatsApp Image 2022-08-31 at 12.27.25 AM.jpeg…]()
+to get a better performance on load
 
 - [This code was writed by Ditman in this discuss issue, here](https://github.com/flutter/flutter/issues/76009)
 
