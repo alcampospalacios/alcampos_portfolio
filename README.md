@@ -7,7 +7,8 @@ Beauty an simple interface mobil and web.
 
 This project is using Gh-Pages for automatic deployment on githubpages
 
-- [You can find more information about deploy web app, here: ](https://github.com/bluefireteam/flutter-gh-pages)
+- [You can find more information about deploy web app, here](https://github.com/bluefireteam/flutter-gh-pages)
+- [Here a video about how do it on youtube](https://github.com/bluefireteam/flutter-gh-pages)
 
 First: Create a workflows folder inside .github and after web.yml inside with this code:
 .github\workflows\web.yml
@@ -37,11 +38,13 @@ webRender: Is to build your app using canvaskit or html, by default is canvaskit
 
 baseHref: This is the name of your repo and will be part of the url.
 
+Now you need to add this setting to your project on github:
+
 ## Fixing performance problem on load initial
 
 Now we need to add some script to get a better performance on load
 
-- [This code was writed by Ditman in this discuss issue, here: ](https://github.com/flutter/flutter/issues/76009)
+- [This code was writed by Ditman in this discuss issue, here](https://github.com/flutter/flutter/issues/76009)
 
 Bottom of <link rel="manifest" href="manifest.json" /> remove the existen code and paste
 this inside the html label, you can see the full code on web/index.html:
