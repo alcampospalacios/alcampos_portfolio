@@ -73,7 +73,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                       height: 5,
                     ),
                     Text(
-                      'alcampos@gmail.com',
+                      'alcampospalacios@gmail.com',
                       style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
                     ),
                     SizedBox(
