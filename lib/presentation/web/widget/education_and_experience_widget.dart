@@ -41,7 +41,7 @@ class EducationAndExperience extends StatelessWidget {
                       textAlign: TextAlign.justify,
                     ),
                     Text(
-                      'University of Information Science (UCI)',
+                      'University of Informatic Sciences (UCI)',
                       style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
                       softWrap: true,
                       textAlign: TextAlign.justify,
