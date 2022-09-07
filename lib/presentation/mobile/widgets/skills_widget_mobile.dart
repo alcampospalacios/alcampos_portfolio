@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SkillsWidgetMobile extends StatelessWidget {
   const SkillsWidgetMobile({Key? key}) : super(key: key);
@@ -8,12 +9,12 @@ class SkillsWidgetMobile extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text('My Skills',
-            style: TextStyle(
-              fontFamily: 'NotoSerif',
-              color: Colors.black87,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+        Text('My Skills',
+            style: GoogleFonts.notoSerif(
+              textStyle: const TextStyle(
+                  color: Colors.black87,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
             )),
         const SizedBox(height: 20),
         SizedBox(
@@ -30,7 +31,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -41,26 +43,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('100%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Flutter',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Flutter',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -73,7 +75,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -84,26 +87,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('100%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Dart',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Dart',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -116,7 +119,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -126,26 +130,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('95%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Angular',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Angular',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -158,7 +162,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -168,26 +173,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('95%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Typescript',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Typescript',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -200,7 +205,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -210,26 +216,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('95%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Javascript',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Javascript',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -242,7 +248,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -252,26 +259,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('90%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Html',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Html',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -284,7 +291,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -294,24 +302,24 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           child: Text('80%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
-                    child: Text(
-                      'Css',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                  FittedBox(
+                    child: Text('Css',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -324,7 +332,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -334,26 +343,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('78%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Sass',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Sass',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -366,7 +375,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -376,26 +386,26 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('95%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
+                  FittedBox(
                     fit: BoxFit.cover,
-                    child: Text(
-                      'Domain Driven\nDesign Architecture',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                    child: Text('Domain Driven\nDesign Architecture',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),
@@ -408,7 +418,8 @@ class SkillsWidgetMobile extends StatelessWidget {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
-                      border: Border.all(color: const Color(0xfff3f3f3), width: 0.5),
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
                       borderRadius: const BorderRadius.all(Radius.circular(50)),
                     ),
                     child: Column(
@@ -418,25 +429,25 @@ class SkillsWidgetMobile extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
                         ),
-                        const FittedBox(
+                        FittedBox(
                           fit: BoxFit.cover,
                           child: Text('85%',
-                              style: TextStyle(
-                                fontFamily: 'NotoSerif',
-                                color: Colors.black87,
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black87,
+                                ),
                               )),
                         ),
                       ],
                     ),
                   ),
-                  const FittedBox(
-                    child: Text(
-                      'Clean Architecture',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black,
-                      ),
-                    ),
+                  FittedBox(
+                    child: Text('Clean Architecture',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        )),
                   ),
                 ],
               ),

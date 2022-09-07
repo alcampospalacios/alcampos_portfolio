@@ -2,6 +2,7 @@ import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../widget/about_me_widget.dart';
 import '../widget/education_and_experience_widget.dart';
@@ -49,11 +50,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     _scrollToIndex('work');
                   });
                 },
-                child: const Text(
-                  'Works',
-                  style:
-                      TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
-                ),
+                child: Text('Works',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black87,
+                      ),
+                    )),
               ),
             ),
             const SizedBox(
@@ -65,11 +67,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   _scrollToIndex('contact');
                 });
               },
-              child: const Text(
-                'Contact',
-                style:
-                    TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
-              ),
+              child: Text('Contact',
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                    ),
+                  )),
             ),
           ],
         ),
@@ -165,19 +168,21 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 45),
             Row(
               children: [
-                const Text('Made with flutter by @alcampospalacios, design by',
-                    style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
+                Text('Made with flutter by @alcampospalacios, design by',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black45,
+                      ),
                     )),
                 TextButton(
                   onPressed: () => html.window.open(
                       'https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison',
                       "_blank"),
                   child: Text('Logan Cee',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.red[300],
+                      style: GoogleFonts.notoSerif(
+                        textStyle: TextStyle(
+                          color: Colors.red[300],
+                        ),
                       )),
                 )
               ],

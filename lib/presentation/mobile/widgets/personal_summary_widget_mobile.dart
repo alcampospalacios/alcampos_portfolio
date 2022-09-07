@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/widgets/time_lines_widgets.dart';
 
@@ -15,16 +16,26 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           children: [
-            const Text(
+            Text(
               'BIOGRAPHY',
-              style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+              style: GoogleFonts.notoSerif(
+                textStyle: const TextStyle(
+                  color: Colors.black45,
+                  fontSize: 12,
+                ),
+              ),
             ),
             const SizedBox(
               height: 5,
             ),
-            const Text(
+            Text(
               '''I am enthusiastic, self-taught, I like constant personal improvement, with the aim of offering better solutions to problems both in work environments and in daily life. I maintain good interpersonal relationships with my co-workers. ''',
-              style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+              style: GoogleFonts.notoSerif(
+                textStyle: const TextStyle(
+                  color: Colors.black87,
+                  fontSize: 14,
+                ),
+              ),
               softWrap: true,
               textAlign: TextAlign.justify,
             ),
@@ -36,53 +47,79 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
                       'SERVICES',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 10),
+                      style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                        color: Colors.black45,
+                        fontSize: 10,
+                      )),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Text(
-                      'Software Architect',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
-                    ),
-                    SizedBox(
+                    Text('Software Architect',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 12,
+                          ),
+                        )),
+                    const SizedBox(
                       height: 5,
                     ),
-                    Text(
-                      'Mobile Application Developer',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
-                    ),
-                    SizedBox(
+                    Text('Mobile Application Developer',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 12,
+                          ),
+                        )),
+                    const SizedBox(
                       height: 5,
                     ),
                     Text(
                       'Web Application Developer',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
+                      style: GoogleFonts.notoSerif(
+                        textStyle: const TextStyle(
+                          color: Colors.black87,
+                          fontSize: 12,
+                        ),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 35,
                     ),
-                    Text(
-                      'CONTACT',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 10),
-                    ),
-                    SizedBox(
+                    Text('CONTACT',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black45,
+                            fontSize: 10,
+                          ),
+                        )),
+                    const SizedBox(
                       height: 5,
                     ),
                     Text(
                       'alcampospalacios@gmail.com',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
+                      style: GoogleFonts.notoSerif(
+                        textStyle: const TextStyle(
+                          color: Colors.black87,
+                          fontSize: 12,
+                        ),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
-                    Text(
-                      '+5352054104',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 12),
-                    ),
+                    Text('+5352054104',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 12,
+                          ),
+                        )),
                   ],
                 ),
                 SizedBox(
@@ -95,40 +132,46 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
                       'YEARS OF\n EXPERIENCE',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      '5',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black87,
-                        fontSize: 18,
+                      style: GoogleFonts.notoSerif(
+                        textStyle: const TextStyle(
+                          color: Colors.black45,
+                          fontSize: 12,
+                        ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text('5',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
+                          ),
+                        )),
+                    const SizedBox(
                       height: 35,
                     ),
-                    Text(
-                      'SATISFACTION CLIENT',
-                      style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-                    ),
-                    SizedBox(
+                    Text('SATISFACTION CLIENT',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black45,
+                            fontSize: 12,
+                          ),
+                        )),
+                    const SizedBox(
                       height: 5,
                     ),
-                    Text(
-                      '100%',
-                      style: TextStyle(
-                        fontFamily: 'NotoSerif',
-                        color: Colors.black87,
-                        fontSize: 18,
-                      ),
-                    ),
+                    Text('100%',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 18,
+                          ),
+                        )),
                   ],
                 ),
               ],
@@ -136,65 +179,17 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
             const SizedBox(
               height: 25,
             ),
-            const Text(
-              'PROJECTS EXPERIENCE TIME LINE 5 YEARS',
-              style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-            ),
+            Text('PROJECTS EXPERIENCE TIME LINE 5 YEARS',
+                style: GoogleFonts.notoSerif(
+                  textStyle: const TextStyle(
+                    color: Colors.black45,
+                    fontSize: 12,
+                  ),
+                )),
             const TimeLinesWidget()
           ],
         ),
       ),
-
-      // SizedBox(
-      //   width: MediaQuery.of(context).size.width * 0.2,
-      //   child: ListView(
-      //     shrinkWrap: true,
-      //     scrollDirection: Axis.vertical,
-      //     children: const [
-      //       Text(
-      //         'YEARS OF\n EXPERIENCE',
-      //         style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-      //       ),
-      //       SizedBox(
-      //         height: 5,
-      //       ),
-      //       Text(
-      //         '5',
-      //         style: TextStyle(
-      //           fontFamily: 'NotoSerif',
-      //           color: Colors.black87,
-      //           fontSize: 18,
-      //         ),
-      //       ),
-      //       SizedBox(
-      //         height: 50,
-      //       ),
-      //       Text(
-      //         'SATISFACTION CLIENT',
-      //         style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-      //       ),
-      //       SizedBox(
-      //         height: 5,
-      //       ),
-      //       Text(
-      //         '100%',
-      //         style: TextStyle(
-      //           fontFamily: 'NotoSerif',
-      //           color: Colors.black87,
-      //           fontSize: 18,
-      //         ),
-      //       ),
-      //       SizedBox(
-      //         height: 50,
-      //       ),
-      //       Text(
-      //         'PROJECTS EXPERIENCE TIME LINE 5 YEARS',
-      //         style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
-      //       ),
-      //       // TimeLinesWidget()
-      //     ],
-      //   ),
-      // ),
     );
   }
 }

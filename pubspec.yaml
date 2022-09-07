@@ -54,11 +54,11 @@ flutter:
     - assets/images/
     - assets/logos/
 
-  fonts:
-    - family: NotoSerif
-      fonts:
-        - asset: fonts/NotoSerif-Bold.ttf
-        - asset: fonts/NotoSerif-BoldItalic.ttf
-        - asset: fonts/NotoSerif-Italic.ttf
-        - asset: fonts/NotoSerif-Regular.ttf
-          style: italic
+  # fonts:
+  #   - family: NotoSerif
+  #     fonts:
+  #       - asset: fonts/NotoSerif-Bold.ttf
+  #       - asset: fonts/NotoSerif-BoldItalic.ttf
+  #       - asset: fonts/NotoSerif-Italic.ttf
+  #       - asset: fonts/NotoSerif-Regular.ttf
+  #         style: italic

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'card_project_widget.dart';
@@ -11,7 +12,8 @@ class LatestProjectWidget extends StatefulWidget {
 }
 
 class _LatestProjectWidgetState extends State<LatestProjectWidget> {
-  final controller = PageController(viewportFraction: 0.3, keepPage: true, initialPage: 1);
+  final controller =
+      PageController(viewportFraction: 0.3, keepPage: true, initialPage: 1);
 
   final pages = [
     const CardProjectWidget(
@@ -41,13 +43,16 @@ class _LatestProjectWidgetState extends State<LatestProjectWidget> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text('My Latest Projects',
-            style: TextStyle(
-              fontFamily: 'NotoSerif',
+        Text(
+          'My Latest Projects',
+          style: GoogleFonts.notoSerif(
+            textStyle: const TextStyle(
               color: Colors.black87,
               fontSize: 24,
               fontWeight: FontWeight.bold,
-            )),
+            ),
+          ),
+        ),
         const SizedBox(height: 20),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.6,
