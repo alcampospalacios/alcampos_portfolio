@@ -23,8 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
   // Define the function that scroll to an item
   void _scrollToIndex(String workOrContact) {
     workOrContact == 'contact'
-        ? _scrollController.animateTo(200, duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
-        : _scrollController.animateTo(1400, duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
+        ? _scrollController.animateTo(200,
+            duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
+        : _scrollController.animateTo(1400,
+            duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
   }
 
   @override
@@ -39,7 +41,8 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: Row(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.08),
+              padding: EdgeInsets.only(
+                  left: MediaQuery.of(context).size.width * 0.08),
               child: TextButton(
                 onPressed: () {
                   setState(() {
@@ -48,7 +51,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text(
                   'Works',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+                  style:
+                      TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
                 ),
               ),
             ),
@@ -63,7 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text(
                 'Contact',
-                style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
+                style:
+                    TextStyle(fontFamily: 'NotoSerif', color: Colors.black87),
               ),
             ),
           ],
@@ -77,7 +82,8 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           Center(
               child: IconButton(
-                  onPressed: () => html.window.open('https://github.com/alcampospalacios', "_blank"),
+                  onPressed: () => html.window
+                      .open('https://github.com/alcampospalacios', "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.github,
                     size: 16,
@@ -85,7 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window.open('https://twitter.com/4l3j4ndr09212', "_blank"),
+                  onPressed: () => html.window
+                      .open('https://twitter.com/4l3j4ndr09212', "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.twitter,
                     size: 16,
@@ -93,20 +100,33 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window.open('https://www.linkedin.com/in/alcampospalacios', "_blank"),
+                  onPressed: () => html.window.open(
+                      'https://www.linkedin.com/in/alcampospalacios', "_blank"),
                   icon: const FaIcon(
                     FontAwesomeIcons.linkedinIn,
                     size: 16,
                     color: Colors.black,
                   ))),
+          Center(
+              child: IconButton(
+                  onPressed: () => html.window.open(
+                      'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
+                      "_blank"),
+                  icon: const FaIcon(
+                    FontAwesomeIcons.stackOverflow,
+                    size: 16,
+                    color: Colors.black,
+                  ))),
           Padding(
-            padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.08),
+            padding: EdgeInsets.only(
+                right: MediaQuery.of(context).size.width * 0.08),
             child: Center(
                 child: IconButton(
-                    onPressed: () =>
-                        html.window.open('https://stackoverflow.com/users/12355947/alejandro-campos-palacios', "_blank"),
+                    onPressed: () => html.window.open(
+                        'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
+                        "_blank"),
                     icon: const FaIcon(
-                      FontAwesomeIcons.stackOverflow,
+                      FontAwesomeIcons.fileArrowDown,
                       size: 16,
                       color: Colors.black,
                     ))),
@@ -151,8 +171,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.black45,
                     )),
                 TextButton(
-                  onPressed: () =>
-                      html.window.open('https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison', "_blank"),
+                  onPressed: () => html.window.open(
+                      'https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison',
+                      "_blank"),
                   child: Text('Logan Cee',
                       style: TextStyle(
                         fontFamily: 'NotoSerif',
