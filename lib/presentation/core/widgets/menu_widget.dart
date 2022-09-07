@@ -3,6 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'dart:html' as html;
 
+import 'package:google_fonts/google_fonts.dart';
+
 class MenuWidgetMobile extends StatefulWidget {
   final ScrollController scrollController;
   const MenuWidgetMobile({Key? key, required this.scrollController})
@@ -44,12 +46,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Latest Projects',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
           const SizedBox(height: 15),
@@ -63,12 +65,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Follow me Github',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
           const SizedBox(height: 15),
@@ -82,12 +84,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Follow me Twitter',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
           const SizedBox(height: 15),
@@ -101,12 +103,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Follow me Linkedin',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
           const SizedBox(height: 15),
@@ -121,12 +123,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Follow me Stackoverflow',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
           const SizedBox(height: 15),
@@ -141,12 +143,12 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
                   color: Colors.black45,
                   size: 14,
                 ),
-                label: const Text(
+                label: Text(
                   'Download CV.',
-                  style: TextStyle(
-                      fontFamily: 'NotoSerif',
-                      color: Colors.black45,
-                      fontSize: 16),
+                  style: GoogleFonts.notoSerif(
+                    textStyle:
+                        const TextStyle(color: Colors.black45, fontSize: 16),
+                  ),
                 )),
           ),
         ]),

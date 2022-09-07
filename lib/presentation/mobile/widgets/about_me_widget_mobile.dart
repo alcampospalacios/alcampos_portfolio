@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AboutMeWidgetMobile extends StatelessWidget {
   const AboutMeWidgetMobile({Key? key}) : super(key: key);
@@ -6,23 +7,17 @@ class AboutMeWidgetMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        Text(
-          'Software Engineer, Flutter developer',
-          style: TextStyle(
-            fontFamily: 'NotoSerif',
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        Text(
-          'Based on Cuba',
-          style: TextStyle(
-            fontFamily: 'NotoSerif',
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
+      children: [
+        Text('Software Engineer, Flutter developer',
+            style: GoogleFonts.notoSerif(
+              textStyle:
+                  const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+            )),
+        Text('Based on Cuba',
+            style: GoogleFonts.notoSerif(
+              textStyle:
+                  const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            )),
       ],
     );
   }

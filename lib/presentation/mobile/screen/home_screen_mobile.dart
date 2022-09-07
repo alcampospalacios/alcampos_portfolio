@@ -1,5 +1,7 @@
 import 'dart:html' as html;
 
+import 'package:google_fonts/google_fonts.dart';
+
 import '../../core/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -66,30 +68,33 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           ),
           child: ListView(
             controller: _scrollController,
-            children: const [
-              Align(
+            children: [
+              const Align(
                 alignment: Alignment.center,
                 child: AboutMeWidgetMobile(),
               ),
-              PersonalSummaryWidgetMobile(),
-              ToolSWidgetMobile(),
-              SizedBox(height: 45),
-              Divider(color: Colors.black26, thickness: 0.5),
-              SizedBox(height: 25),
-              SkillsWidgetMobile(),
-              Divider(color: Colors.black26, thickness: 0.5),
-              SizedBox(height: 25),
-              EducationAndExperienceWidgetMobile(),
-              SizedBox(height: 25),
-              Divider(color: Colors.black26, thickness: 0.5),
-              SizedBox(height: 25),
-              LatestProjectWidgetMobile(),
-              SizedBox(height: 45),
-              Divider(color: Colors.black26, thickness: 0.5),
-              SizedBox(height: 45),
-              Text('Made with flutter by @alcampospalacios, design by Alejandro Campos',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45)),
-              SizedBox(height: 25),
+              const PersonalSummaryWidgetMobile(),
+              const ToolSWidgetMobile(),
+              const SizedBox(height: 45),
+              const Divider(color: Colors.black26, thickness: 0.5),
+              const SizedBox(height: 25),
+              const SkillsWidgetMobile(),
+              const Divider(color: Colors.black26, thickness: 0.5),
+              const SizedBox(height: 25),
+              const EducationAndExperienceWidgetMobile(),
+              const SizedBox(height: 25),
+              const Divider(color: Colors.black26, thickness: 0.5),
+              const SizedBox(height: 25),
+              const LatestProjectWidgetMobile(),
+              const SizedBox(height: 45),
+              const Divider(color: Colors.black26, thickness: 0.5),
+              const SizedBox(height: 45),
+              Text(
+                  'Made with flutter by @alcampospalacios, design by Alejandro Campos',
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(color: Colors.black45),
+                  )),
+              const SizedBox(height: 25),
             ],
           ),
         ));

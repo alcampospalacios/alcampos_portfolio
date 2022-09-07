@@ -1,12 +1,18 @@
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CardProjectWidget extends StatelessWidget {
   final String imageUrl;
   final String title;
   final String url;
-  const CardProjectWidget({Key? key, required this.imageUrl, required this.title, required this.url}) : super(key: key);
+  const CardProjectWidget(
+      {Key? key,
+      required this.imageUrl,
+      required this.title,
+      required this.url})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,14 +47,13 @@ class CardProjectWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        Text(
-          title,
-          style: const TextStyle(
-            fontFamily: 'NotoSerif',
-            color: Colors.black45,
-            fontSize: 16,
-          ),
-        ),
+        Text(title,
+            style: GoogleFonts.notoSerif(
+              textStyle: const TextStyle(
+                color: Colors.black45,
+                fontSize: 16,
+              ),
+            )),
       ],
     );
   }

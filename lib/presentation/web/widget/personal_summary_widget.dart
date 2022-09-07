@@ -1,3 +1,5 @@
+import 'package:google_fonts/google_fonts.dart';
+
 import '../../core/widgets/time_lines_widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -17,68 +19,113 @@ class PersonalSummaryWidget extends StatelessWidget {
             child: ListView(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              children: const [
+              children: [
                 Text(
                   'BIOGRAPHY',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   '''I am enthusiastic, self-taught, I like constant personal improvement, with the aim of offering better solutions to problems both in work environments and in daily life. I maintain good interpersonal relationships with my co-workers. ''',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                   softWrap: true,
                   textAlign: TextAlign.justify,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Text(
                   'CONTACT',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'alcampospalacios@gmail.com',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   '+5352054104',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Text(
                   'SERVICES',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'Software Architect',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'Mobile Application Developer',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   'Web Application Developer',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black87, fontSize: 14),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -105,48 +152,65 @@ class PersonalSummaryWidget extends StatelessWidget {
             child: ListView(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              children: const [
+              children: [
                 Text(
                   'YEARS OF\n EXPERIENCE',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   '5',
-                  style: TextStyle(
-                    fontFamily: 'NotoSerif',
-                    color: Colors.black87,
-                    fontSize: 18,
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 18,
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Text(
                   'SATISFACTION CLIENT',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 Text(
                   '100%',
-                  style: TextStyle(
-                    fontFamily: 'NotoSerif',
-                    color: Colors.black87,
-                    fontSize: 18,
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black87,
+                      fontSize: 18,
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Text(
                   'PROJECTS EXPERIENCE TIME LINE 5 YEARS',
-                  style: TextStyle(fontFamily: 'NotoSerif', color: Colors.black45, fontSize: 12),
+                  style: GoogleFonts.notoSerif(
+                    textStyle: const TextStyle(
+                      color: Colors.black45,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
-                TimeLinesWidget()
+                const TimeLinesWidget()
               ],
             ),
           ),
