@@ -68,18 +68,6 @@ class PersonalSummaryWidget extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  '+5352054104',
-                  style: GoogleFonts.notoSerif(
-                    textStyle: const TextStyle(
-                      color: Colors.black87,
-                      fontSize: 14,
-                    ),
-                  ),
-                ),
-                const SizedBox(
                   height: 25,
                 ),
                 Text(
@@ -202,7 +190,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 50,
                 ),
                 Text(
-                  'PROJECTS EXPERIENCE TIME LINE 5 YEARS',
+                  'PROJECTS EXPERIENCE TIME LINE 6 YEARS',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black45,
