@@ -154,7 +154,7 @@ class PersonalSummaryWidget extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  '5',
+                  '6',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(
                       color: Colors.black87,

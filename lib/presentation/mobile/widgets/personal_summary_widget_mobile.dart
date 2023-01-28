@@ -135,7 +135,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                     const SizedBox(
                       height: 5,
                     ),
-                    Text('5',
+                    Text('6',
                         style: GoogleFonts.notoSerif(
                           textStyle: const TextStyle(
                             color: Colors.black87,

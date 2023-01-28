@@ -84,7 +84,7 @@ class TimeLinesWidget extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 5),
-              Text('FREELANCER: 1 Year',
+              Text('FREELANCER: 2 Year',
                   style: GoogleFonts.notoSerif(
                     textStyle:
                         const TextStyle(color: Colors.black87, fontSize: 14),
