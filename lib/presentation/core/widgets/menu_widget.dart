@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'dart:html' as html;
-
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MenuWidgetMobile extends StatefulWidget {
   final ScrollController scrollController;
@@ -19,6 +18,14 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
   void _scrollToIndex() {
     widget.scrollController.animateTo(1400,
         duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
+  }
+
+  void _launchUrl(String url) async {
+    final Uri uri = Uri.parse(url);
+
+    if (!await launchUrl(uri)) {
+      throw Exception('Could not launch $url');
+    }
   }
 
   @override
@@ -58,8 +65,9 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window
-                    .open('https://github.com/alcampospalacios', "_blank"),
+                onPressed: () => _launchUrl(
+                      'https://github.com/alcampospalacios',
+                    ),
                 icon: const FaIcon(
                   FontAwesomeIcons.github,
                   color: Colors.black45,
@@ -77,8 +85,9 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window
-                    .open('https://twitter.com/4l3j4ndr09212', "_blank"),
+                onPressed: () => _launchUrl(
+                      'https://twitter.com/4l3j4ndr09212',
+                    ),
                 icon: const FaIcon(
                   FontAwesomeIcons.twitter,
                   color: Colors.black45,
@@ -96,8 +105,9 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window.open(
-                    'https://www.linkedin.com/in/alcampospalacios', "_blank"),
+                onPressed: () => _launchUrl(
+                      'https://www.linkedin.com/in/alcampospalacios',
+                    ),
                 icon: const FaIcon(
                   FontAwesomeIcons.linkedinIn,
                   color: Colors.black45,
@@ -115,9 +125,9 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window.open(
-                    'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
-                    "_blank"),
+                onPressed: () => _launchUrl(
+                      'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
+                    ),
                 icon: const FaIcon(
                   FontAwesomeIcons.stackOverflow,
                   color: Colors.black45,
@@ -135,9 +145,9 @@ class _MenuWidgetMobileState extends State<MenuWidgetMobile> {
           Align(
             alignment: Alignment.topLeft,
             child: TextButton.icon(
-                onPressed: () => html.window.open(
-                    'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
-                    "_blank"),
+                onPressed: () => _launchUrl(
+                      'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
+                    ),
                 icon: const FaIcon(
                   FontAwesomeIcons.fileArrowDown,
                   color: Colors.black45,

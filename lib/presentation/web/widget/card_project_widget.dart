@@ -1,9 +1,8 @@
-import 'dart:html' as html;
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class CardProjectWidget extends StatelessWidget {
+class CardProjectWidget extends StatefulWidget {
   final String imageUrl;
   final String title;
   final String url;
@@ -15,11 +14,26 @@ class CardProjectWidget extends StatelessWidget {
       : super(key: key);
 
   @override
+  State<CardProjectWidget> createState() => _CardProjectWidgetState();
+}
+
+void _launchUrl(String url) async {
+  final Uri uri = Uri.parse(url);
+
+  if (!await launchUrl(uri)) {
+    throw Exception('Could not launch $url');
+  }
+}
+
+class _CardProjectWidgetState extends State<CardProjectWidget> {
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         InkWell(
-          onTap: () => html.window.open(url, "_blank"),
+          onTap: () => _launchUrl(
+            widget.url,
+          ),
           child: Container(
             width: MediaQuery.of(context).size.width * 0.2,
             height: MediaQuery.of(context).size.height * 0.5,
@@ -38,7 +52,7 @@ class CardProjectWidget extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Image.asset(
-                imageUrl,
+                widget.imageUrl,
                 fit: BoxFit.contain,
                 width: MediaQuery.of(context).size.width * 0.2,
                 height: MediaQuery.of(context).size.height * 0.4,
@@ -47,7 +61,7 @@ class CardProjectWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        Text(title,
+        Text(widget.title,
             style: GoogleFonts.notoSerif(
               textStyle: const TextStyle(
                 color: Colors.black45,

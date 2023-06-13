@@ -23,16 +23,20 @@ extension ContextEx on BuildContext {
   bool get isDesktop => width >= Breakpoint.lg;
 
   //Orientation
-  bool get isPortrait => MediaQuery.of(this).orientation == Orientation.portrait;
+  bool get isPortrait =>
+      MediaQuery.of(this).orientation == Orientation.portrait;
 
-  bool get isLandscape => MediaQuery.of(this).orientation == Orientation.landscape;
+  bool get isLandscape =>
+      MediaQuery.of(this).orientation == Orientation.landscape;
 
   bool get isKeyboardVisible => MediaQuery.of(this).viewInsets.bottom > 100;
 }
 
 extension ContextSize on BuildContext {
   // responsive height (movile or tablet)
-  double respWidgetH(movile, [tablet]) => tablet != null ? (isTablet ? respH * tablet : respH * movile) : respH * movile;
+  double respWidgetH(movile, [tablet]) => tablet != null
+      ? (isTablet ? respH * tablet : respH * movile)
+      : respH * movile;
 
   double respText(num refSize, [num? tablet]) {
     num refSizeTemp = isTablet && tablet != null ? tablet : refSize;
@@ -42,7 +46,6 @@ extension ContextSize on BuildContext {
     if ((refSizeTemp - value) > 1.5) {
       value = refSizeTemp - 1.5;
     }
-    print(refSizeTemp.toString() + ' ' + value.toString());
     return value >= 11 ? value : 11;
   }
 
@@ -56,5 +59,6 @@ extension EnumToString on Enum {
 }
 
 extension CapitalizeString on String {
-  String capitalizeString() => (this != null && length > 0) ? "${this[0].toUpperCase()}${substring(1)}" : '';
+  String capitalizeString() =>
+      (length > 0) ? "${this[0].toUpperCase()}${substring(1)}" : '';
 }

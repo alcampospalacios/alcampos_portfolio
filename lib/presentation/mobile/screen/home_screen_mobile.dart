@@ -1,10 +1,9 @@
-import 'dart:html' as html;
-
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
 
+import '../../web/widget/articles.dart';
 import '../widgets/about_me_widget_mobile.dart';
 import '../widgets/education_and_experience_widget_mobile.dart';
 import '../widgets/latest_projects_widget_mobile.dart';
@@ -86,6 +85,9 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 25),
               const LatestProjectWidgetMobile(),
+              const SizedBox(height: 45),
+              const Divider(color: Colors.black26, thickness: 0.5),
+              const Articles(),
               const SizedBox(height: 45),
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 45),

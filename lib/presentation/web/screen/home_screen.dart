@@ -1,10 +1,10 @@
-import 'dart:html' as html;
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../widget/about_me_widget.dart';
+import '../widget/articles.dart';
 import '../widget/education_and_experience_widget.dart';
 import '../widget/latest_projects_widget.dart';
 import '../widget/personal_summary_widget.dart';
@@ -28,6 +28,14 @@ class _HomeScreenState extends State<HomeScreen> {
             duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
         : _scrollController.animateTo(1400,
             duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
+  }
+
+  void _launchUrl(String url) async {
+    final Uri uri = Uri.parse(url);
+
+    if (!await launchUrl(uri)) {
+      throw Exception('Could not launch $url');
+    }
   }
 
   @override
@@ -85,8 +93,8 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           Center(
               child: IconButton(
-                  onPressed: () => html.window
-                      .open('https://github.com/alcampospalacios', "_blank"),
+                  onPressed: () =>
+                      _launchUrl('https://github.com/alcampospalacios'),
                   icon: const FaIcon(
                     FontAwesomeIcons.github,
                     size: 16,
@@ -94,8 +102,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window
-                      .open('https://twitter.com/4l3j4ndr09212', "_blank"),
+                  onPressed: () => _launchUrl(
+                        'https://twitter.com/4l3j4ndr09212',
+                      ),
                   icon: const FaIcon(
                     FontAwesomeIcons.twitter,
                     size: 16,
@@ -103,8 +112,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window.open(
-                      'https://www.linkedin.com/in/alcampospalacios', "_blank"),
+                  onPressed: () => _launchUrl(
+                        'https://www.linkedin.com/in/alcampospalacios',
+                      ),
                   icon: const FaIcon(
                     FontAwesomeIcons.linkedinIn,
                     size: 16,
@@ -112,9 +122,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ))),
           Center(
               child: IconButton(
-                  onPressed: () => html.window.open(
-                      'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
-                      "_blank"),
+                  onPressed: () => _launchUrl(
+                        'https://stackoverflow.com/users/12355947/alejandro-campos-palacios',
+                      ),
                   icon: const FaIcon(
                     FontAwesomeIcons.stackOverflow,
                     size: 16,
@@ -125,9 +135,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 right: MediaQuery.of(context).size.width * 0.08),
             child: Center(
                 child: IconButton(
-                    onPressed: () => html.window.open(
-                        'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
-                        "_blank"),
+                    onPressed: () => _launchUrl(
+                          'https://drive.google.com/file/d/14Y8wr4dwm1lRv8zVRQ8Kixi9_WuxuM8V/view?usp=sharing',
+                        ),
                     icon: const FaIcon(
                       FontAwesomeIcons.fileArrowDown,
                       size: 16,
@@ -163,6 +173,8 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 45),
             const LatestProjectWidget(),
             const SizedBox(height: 45),
+            const Divider(color: Colors.black26, thickness: 0.5),
+            const Articles(),
             const SizedBox(height: 45),
             const Divider(color: Colors.black26, thickness: 0.5),
             const SizedBox(height: 45),
@@ -175,9 +187,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     )),
                 TextButton(
-                  onPressed: () => html.window.open(
-                      'https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison',
-                      "_blank"),
+                  onPressed: () => _launchUrl(
+                    'https://dribbble.com/shots/16077352-Personal-Portfolio-Site-Bruno-Erdison',
+                  ),
                   child: Text('Logan Cee',
                       style: GoogleFonts.notoSerif(
                         textStyle: TextStyle(

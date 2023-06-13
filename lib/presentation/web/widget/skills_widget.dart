@@ -132,6 +132,138 @@ class SkillsWidget extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
+                          'assets/logos/solid.png',
+                          width: MediaQuery.of(context).size.width * 0.1,
+                          height: MediaQuery.of(context).size.width * 0.1,
+                        ),
+                        Text(
+                          '98%',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    'S.O.L.I.D\nPrinciples',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(width: 25),
+              Column(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.1,
+                    height: MediaQuery.of(context).size.width * 0.15,
+                    padding: const EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(130)),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          'assets/logos/ddd.png',
+                          width: MediaQuery.of(context).size.width * 0.1,
+                          height: MediaQuery.of(context).size.width * 0.1,
+                        ),
+                        Text(
+                          '95%',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    'Domain Driven\nDesign Architecture',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(width: 25),
+              Column(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.1,
+                    height: MediaQuery.of(context).size.width * 0.15,
+                    padding: const EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(130)),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          'assets/logos/clean.png',
+                          width: MediaQuery.of(context).size.width * 0.1,
+                          height: MediaQuery.of(context).size.width * 0.1,
+                        ),
+                        Text(
+                          '95%',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    'Clean Architecture',
+                    style: GoogleFonts.notoSerif(
+                      textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(width: 25),
+              Column(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.1,
+                    height: MediaQuery.of(context).size.width * 0.15,
+                    padding: const EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                      border: Border.all(
+                          color: const Color(0xfff3f3f3), width: 0.5),
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(130)),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset(
                           'assets/logos/angular.png',
                           width: MediaQuery.of(context).size.width * 0.1,
                           height: MediaQuery.of(context).size.width * 0.1,
@@ -370,94 +502,6 @@ class SkillsWidget extends StatelessWidget {
                   ),
                   Text(
                     'Sass',
-                    style: GoogleFonts.notoSerif(
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(width: 25),
-              Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.1,
-                    height: MediaQuery.of(context).size.width * 0.15,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      border: Border.all(
-                          color: const Color(0xfff3f3f3), width: 0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(130)),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/logos/ddd.png',
-                          width: MediaQuery.of(context).size.width * 0.1,
-                          height: MediaQuery.of(context).size.width * 0.1,
-                        ),
-                        Text(
-                          '95%',
-                          style: GoogleFonts.notoSerif(
-                            textStyle: const TextStyle(
-                              color: Colors.black87,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    'Domain Driven\nDesign Architecture',
-                    style: GoogleFonts.notoSerif(
-                      textStyle: const TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(width: 25),
-              Column(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.1,
-                    height: MediaQuery.of(context).size.width * 0.15,
-                    padding: const EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: Colors.black12,
-                      border: Border.all(
-                          color: const Color(0xfff3f3f3), width: 0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(130)),
-                    ),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/logos/clean.png',
-                          width: MediaQuery.of(context).size.width * 0.1,
-                          height: MediaQuery.of(context).size.width * 0.1,
-                        ),
-                        Text(
-                          '85%',
-                          style: GoogleFonts.notoSerif(
-                            textStyle: const TextStyle(
-                              color: Colors.black87,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    'Clean Architecture',
                     style: GoogleFonts.notoSerif(
                       textStyle: const TextStyle(
                         color: Colors.black,
