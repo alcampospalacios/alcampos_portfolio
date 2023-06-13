@@ -21,6 +21,23 @@ class HomeScreenMobile extends StatefulWidget {
 class _HomeScreenMobileState extends State<HomeScreenMobile> {
   final _scrollController = ScrollController();
 
+  // show image on dialog
+  void showImage(BuildContext context, String image) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return SizedBox(
+          height: MediaQuery.of(context).size.height * 0.42,
+          child: Dialog(
+            child: Image.asset(
+              image,
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,24 +48,34 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           iconTheme: const IconThemeData(color: Colors.black),
           elevation: 0,
           leadingWidth: MediaQuery.of(context).size.width * 0.4,
-          title: Image.asset(
-            'assets/logos/alcampos.png',
-            width: MediaQuery.of(context).size.width * 0.3,
-            height: MediaQuery.of(context).size.height * 0.27,
+          title: InkWell(
+            onTap: () {
+              showImage(context, 'assets/logos/alcampos.png');
+            },
+            child: Image.asset(
+              'assets/logos/alcampos.png',
+              width: MediaQuery.of(context).size.width * 0.3,
+              height: MediaQuery.of(context).size.height * 0.27,
+            ),
           ),
           centerTitle: true,
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 8.0),
               child: Center(
-                child: CircleAvatar(
-                  radius: 20,
-                  backgroundColor: Colors.transparent,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(25),
-                    child: Image.asset(
-                      'assets/images/alcampos.jpg',
-                      fit: BoxFit.cover,
+                child: InkWell(
+                  onTap: () {
+                    showImage(context, 'assets/images/alcampos.jpg');
+                  },
+                  child: CircleAvatar(
+                    radius: 20,
+                    backgroundColor: Colors.transparent,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(25),
+                      child: Image.asset(
+                        'assets/images/alcampos.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

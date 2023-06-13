@@ -94,12 +94,15 @@ class _ArticlesState extends State<Articles> {
                           ),
                         ),
                         const SizedBox(height: 10),
-                        Text('Flutter + Supabase + Google Oauth + Paso a Paso',
-                            style: GoogleFonts.notoSerif(
-                              textStyle: const TextStyle(
-                                color: Colors.black45,
-                              ),
-                            )),
+                        Expanded(
+                          child: Text(
+                              'Flutter + Supabase + Google Oauth + Paso a Paso',
+                              style: GoogleFonts.notoSerif(
+                                textStyle: const TextStyle(
+                                  color: Colors.black45,
+                                ),
+                              )),
+                        ),
                       ],
                     )
                   ],
