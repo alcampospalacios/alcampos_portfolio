@@ -25,7 +25,7 @@ class _ArticlesState extends State<Articles> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: (context.isTablet || context.isMobile)
-          ? context.height * 0.4
+          ? context.height * 0.3
           : context.height * 0.65,
       child: CustomScrollView(
         shrinkWrap: true,
@@ -64,7 +64,7 @@ class _ArticlesState extends State<Articles> {
                             'https://medium.com/@alcampospalacios/flutter-supabase-google-oauth-paso-a-paso-7c9faf3a1d4c',
                           ),
                           child: Container(
-                            width: MediaQuery.of(context).size.width * 0.2,
+                            width: MediaQuery.of(context).size.width * 0.3,
                             height: (context.isTablet || context.isMobile)
                                 ? context.height * 0.2
                                 : context.height * 0.5,

@@ -27,7 +27,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -67,7 +67,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -105,7 +105,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -149,7 +149,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -192,7 +192,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -235,7 +235,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -272,7 +272,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -309,7 +309,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -348,7 +348,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -387,7 +387,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
@@ -426,7 +426,7 @@ class SkillsWidgetMobile extends StatelessWidget {
                 children: [
                   Container(
                     width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.1,
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.black12,
