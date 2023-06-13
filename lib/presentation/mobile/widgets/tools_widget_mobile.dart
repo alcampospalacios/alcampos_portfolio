@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ToolSWidgetMobile extends StatelessWidget {
   const ToolSWidgetMobile({Key? key}) : super(key: key);
 
-  // show image on dialog
+  // show image on dialog to show the logo
   void showImage(BuildContext context, String image) {
     showDialog(
       context: context,
