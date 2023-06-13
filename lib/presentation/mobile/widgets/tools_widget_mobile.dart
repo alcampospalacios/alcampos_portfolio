@@ -96,6 +96,19 @@ class ToolSWidgetMobile extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
+              showImage(context, 'assets/logos/supabase.png');
+            },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Image.asset(
+                'assets/logos/supabase.png',
+                width: MediaQuery.of(context).size.width * 0.15,
+                height: MediaQuery.of(context).size.width * 0.15,
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {
               showImage(context, 'assets/logos/firebase_crashlytics.png');
             },
             child: Padding(
@@ -128,19 +141,6 @@ class ToolSWidgetMobile extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Image.asset(
                 'assets/logos/firebase_cloud_messaging.png',
-                width: MediaQuery.of(context).size.width * 0.15,
-                height: MediaQuery.of(context).size.width * 0.15,
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              showImage(context, 'assets/logos/supabase.png');
-            },
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Image.asset(
-                'assets/logos/supabase.png',
                 width: MediaQuery.of(context).size.width * 0.15,
                 height: MediaQuery.of(context).size.width * 0.15,
               ),

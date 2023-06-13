@@ -53,6 +53,14 @@ class ToolSWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Image.asset(
+              'assets/logos/supabase.png',
+              width: MediaQuery.of(context).size.width * 0.1,
+              height: MediaQuery.of(context).size.width * 0.1,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Image.asset(
               'assets/logos/firebase_crashlytics.png',
               width: MediaQuery.of(context).size.width * 0.1,
               height: MediaQuery.of(context).size.width * 0.1,
@@ -70,14 +78,6 @@ class ToolSWidget extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Image.asset(
               'assets/logos/firebase_cloud_messaging.png',
-              width: MediaQuery.of(context).size.width * 0.1,
-              height: MediaQuery.of(context).size.width * 0.1,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Image.asset(
-              'assets/logos/supabase.png',
               width: MediaQuery.of(context).size.width * 0.1,
               height: MediaQuery.of(context).size.width * 0.1,
             ),
