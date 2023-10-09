@@ -102,7 +102,7 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
                       height: 5,
                     ),
                     Text(
-                      'alcampospalacios@gmail.com',
+                      'alcampospalacios92@gmail.com',
                       style: GoogleFonts.notoSerif(
                         textStyle: const TextStyle(
                           color: Colors.black87,
