@@ -15,7 +15,7 @@ class AboutMeWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             )),
-        Text('Based on Cuba',
+        Text('Based on Spain',
             style: GoogleFonts.notoSerif(
               textStyle: const TextStyle(
                 fontSize: 16,
