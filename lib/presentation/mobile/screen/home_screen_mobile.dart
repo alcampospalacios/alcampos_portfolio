@@ -1,3 +1,5 @@
+import 'package:alcampos_portfolio/presentation/core/extensions.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/widgets/menu_widget.dart';
@@ -10,6 +12,9 @@ import '../widgets/latest_projects_widget_mobile.dart';
 import '../widgets/personal_summary_widget_mobile.dart';
 import '../widgets/skills_widget_mobile.dart';
 import '../widgets/tools_widget_mobile.dart';
+
+import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
 
 class HomeScreenMobile extends StatefulWidget {
   const HomeScreenMobile({Key? key}) : super(key: key);
@@ -40,6 +45,16 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
 
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      // Define MetaSEO object
+      MetaSEO meta = MetaSEO();
+      // add meta seo data for web app as you want
+      meta.author(author: 'Alejandro Campos Palacios');
+      meta.description(description: 'A web site that shows my personal portfolio');
+      meta.keywords(
+          keywords: 'Flutter, Dart, Alejandro, Campos, Palacios, alcampospalacios, alcampospalacios92@gmail.com');
+    }
+
     return Scaffold(
         backgroundColor: Colors.white,
         extendBodyBehindAppBar: false,
@@ -94,6 +109,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
           ),
           child: ListView(
             controller: _scrollController,
+            shrinkWrap: true,
             children: [
               const Align(
                 alignment: Alignment.center,
@@ -114,12 +130,11 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
               const LatestProjectWidgetMobile(),
               const SizedBox(height: 45),
               const Divider(color: Colors.black26, thickness: 0.5),
-              const Articles(),
+              SizedBox(height: context.height * 0.4, child: const Articles()),
               const SizedBox(height: 45),
               const Divider(color: Colors.black26, thickness: 0.5),
               const SizedBox(height: 45),
-              Text(
-                  'Made with flutter by @alcampospalacios, design by Alejandro Campos',
+              Text('Made with flutter by @alcampospalacios, design by Alejandro Campos',
                   style: GoogleFonts.notoSerif(
                     textStyle: const TextStyle(color: Colors.black45),
                   )),

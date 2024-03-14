@@ -1,3 +1,4 @@
+import 'package:alcampos_portfolio/presentation/core/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,6 +11,9 @@ import '../widget/latest_projects_widget.dart';
 import '../widget/personal_summary_widget.dart';
 import '../widget/skills_widget.dart';
 import '../widget/tools_widget.dart';
+
+import 'package:meta_seo/meta_seo.dart';
+import 'package:flutter/foundation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -24,10 +28,8 @@ class _HomeScreenState extends State<HomeScreen> {
   // Define the function that scroll to an item
   void _scrollToIndex(String workOrContact) {
     workOrContact == 'contact'
-        ? _scrollController.animateTo(200,
-            duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
-        : _scrollController.animateTo(1400,
-            duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
+        ? _scrollController.animateTo(200, duration: const Duration(milliseconds: 800), curve: Curves.easeIn)
+        : _scrollController.animateTo(1400, duration: const Duration(milliseconds: 800), curve: Curves.easeIn);
   }
 
   void _launchUrl(String url) async {
@@ -40,6 +42,17 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Add MetaSEO just into Web platform condition
+    if (kIsWeb) {
+      // Define MetaSEO object
+      MetaSEO meta = MetaSEO();
+      // add meta seo data for web app as you want
+      meta.author(author: 'Alejandro Campos Palacios');
+      meta.description(description: 'A web site that shows my personal portfolio');
+      meta.keywords(
+          keywords: 'Flutter, Dart, Alejandro, Campos, Palacios, alcampospalacios, alcampospalacios92@gmail.com');
+    }
+
     return Scaffold(
       backgroundColor: Colors.white,
       extendBodyBehindAppBar: false,
@@ -50,8 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: Row(
           children: [
             Padding(
-              padding: EdgeInsets.only(
-                  left: MediaQuery.of(context).size.width * 0.08),
+              padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.08),
               child: TextButton(
                 onPressed: () {
                   setState(() {
@@ -86,15 +98,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         title: Image.asset(
           'assets/logos/alcampos.png',
-          width: MediaQuery.of(context).size.width * 0.3,
+          width: MediaQuery.of(context).size.width * 0.2,
           height: MediaQuery.of(context).size.height * 0.27,
         ),
         centerTitle: true,
         actions: [
           Center(
               child: IconButton(
-                  onPressed: () =>
-                      _launchUrl('https://github.com/alcampospalacios'),
+                  onPressed: () => _launchUrl('https://github.com/alcampospalacios'),
                   icon: const FaIcon(
                     FontAwesomeIcons.github,
                     size: 16,
@@ -131,8 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.black,
                   ))),
           Padding(
-            padding: EdgeInsets.only(
-                right: MediaQuery.of(context).size.width * 0.08),
+            padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.08),
             child: Center(
                 child: IconButton(
                     onPressed: () => _launchUrl(
@@ -174,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const LatestProjectWidget(),
             const SizedBox(height: 45),
             const Divider(color: Colors.black26, thickness: 0.5),
-            const Articles(),
+            SizedBox(height: context.height * 0.4, child: const Articles()),
             const SizedBox(height: 45),
             const Divider(color: Colors.black26, thickness: 0.5),
             const SizedBox(height: 45),

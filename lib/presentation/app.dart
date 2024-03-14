@@ -11,13 +11,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'alcamposportfolio',
+        title: 'Alejandro Campos Palacios',
         /*   home: const SignInPage(), */
         debugShowCheckedModeBanner: false,
         showPerformanceOverlay: false,
         initialRoute: '/home',
         routes: {
-          '/home': (context) => context.isMobile ? const HomeScreenMobile() : const HomeScreen(),
+          '/home': (context) =>
+              context.isMobile ? const HomeScreenMobile() : const HomeScreen(),
         });
   }
 }

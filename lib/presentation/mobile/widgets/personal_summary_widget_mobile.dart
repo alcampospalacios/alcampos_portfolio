@@ -45,124 +45,130 @@ class PersonalSummaryWidgetMobile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'SERVICES',
-                      style: GoogleFonts.notoSerif(
-                          textStyle: const TextStyle(
-                        color: Colors.black45,
-                        fontSize: 10,
-                      )),
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text('Software Architect',
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'SERVICES',
                         style: GoogleFonts.notoSerif(
-                          textStyle: const TextStyle(
-                            color: Colors.black87,
-                            fontSize: 12,
-                          ),
-                        )),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text('Mobile Application Developer',
-                        style: GoogleFonts.notoSerif(
-                          textStyle: const TextStyle(
-                            color: Colors.black87,
-                            fontSize: 12,
-                          ),
-                        )),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'Web Application Developer',
-                      style: GoogleFonts.notoSerif(
-                        textStyle: const TextStyle(
-                          color: Colors.black87,
-                          fontSize: 12,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 35,
-                    ),
-                    Text('CONTACT',
-                        style: GoogleFonts.notoSerif(
-                          textStyle: const TextStyle(
-                            color: Colors.black45,
-                            fontSize: 10,
-                          ),
-                        )),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      'alcampospalacios92@gmail.com',
-                      style: GoogleFonts.notoSerif(
-                        textStyle: const TextStyle(
-                          color: Colors.black87,
-                          fontSize: 12,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.25,
-                    child: const VerticalDivider(
-                      color: Colors.black26,
-                      width: 0.7,
-                      thickness: 0.5,
-                    )),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'YEARS OF\n EXPERIENCE',
-                      style: GoogleFonts.notoSerif(
-                        textStyle: const TextStyle(
+                            textStyle: const TextStyle(
                           color: Colors.black45,
-                          fontSize: 12,
-                        ),
+                          fontSize: 10,
+                        )),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text('6',
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text('Software Architect',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 12,
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text('Mobile Application Developer',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 12,
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'Web Application Developer',
                         style: GoogleFonts.notoSerif(
                           textStyle: const TextStyle(
                             color: Colors.black87,
-                            fontSize: 18,
+                            fontSize: 12,
                           ),
-                        )),
-                    const SizedBox(
-                      height: 35,
-                    ),
-                    Text('SATISFACTION CLIENT',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 35,
+                      ),
+                      Text('CONTACT',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black45,
+                              fontSize: 10,
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        'alcampospalacios92@gmail.com',
+                        style: GoogleFonts.notoSerif(
+                          textStyle: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.4,
+                      child: const VerticalDivider(
+                        color: Colors.black26,
+                        width: 0.7,
+                        thickness: 0.5,
+                      )),
+                ),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'YEARS OF\n EXPERIENCE',
                         style: GoogleFonts.notoSerif(
                           textStyle: const TextStyle(
                             color: Colors.black45,
                             fontSize: 12,
                           ),
-                        )),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text('100%',
-                        style: GoogleFonts.notoSerif(
-                          textStyle: const TextStyle(
-                            color: Colors.black87,
-                            fontSize: 18,
-                          ),
-                        )),
-                  ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text('6',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 18,
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 35,
+                      ),
+                      Text('SATISFACTION CLIENT',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black45,
+                              fontSize: 12,
+                            ),
+                          )),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text('100%',
+                          style: GoogleFonts.notoSerif(
+                            textStyle: const TextStyle(
+                              color: Colors.black87,
+                              fontSize: 18,
+                            ),
+                          )),
+                    ],
+                  ),
                 ),
               ],
             ),

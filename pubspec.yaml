@@ -1,5 +1,5 @@
 name: alcampos_portfolio
-description: A new Flutter project.
+description: A web site to show my portfolio.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -37,6 +37,7 @@ dependencies:
   font_awesome_flutter: ^10.5.0
   smooth_page_indicator: ^1.1.0
   url_launcher: ^6.1.14
+  meta_seo: ^3.0.9
 
 dev_dependencies:
   flutter_test:
